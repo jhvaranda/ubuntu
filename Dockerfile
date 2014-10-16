@@ -38,3 +38,6 @@ WORKDIR /root
 
 # Define default command.
 CMD ["bash"]
+
+ENV http_proxy  
+ENV https_proxy  
