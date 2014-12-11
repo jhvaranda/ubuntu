@@ -7,6 +7,8 @@
 # Pull base image.
 FROM ubuntu:trusty
 
+
+
 # Install.
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
@@ -39,5 +41,5 @@ WORKDIR /root
 # Define default command.
 CMD ["bash"]
 
-ENV http_proxy  
-ENV https_proxy  
+
+ 
