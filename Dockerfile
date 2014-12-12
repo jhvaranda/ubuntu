@@ -18,10 +18,9 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   apt-get install -y unattended-upgrades && \
-  apt-get autoclean -y && \
-  apt-get clean -y && \
-  apt-get autoremove -y && \
-  rm -rf /var/lib/apt/lists/*
+  apt-get autoremove -y && \  
+  apt-get autoclean -y
+  
 
 # Add files.
 ADD root/.bashrc /root/.bashrc
